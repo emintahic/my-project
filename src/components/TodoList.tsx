@@ -99,7 +99,7 @@ const TodoList: React.FC = () => {
             ) : (
               <div className="flex flex-row items-center">
                 <input
-                  className="w-5 h-5 mr-2"
+                  className="w-5 h-5 mr-2 cursor-pointer"
                   type="checkbox"
                   onChange={() => handleToggleTodo(todo.id)}
                 />
@@ -123,7 +123,7 @@ const TodoList: React.FC = () => {
                 </div>
               )}
               <div onClick={() => handleDeleteTodo(todo.id)}>
-                <FaTrashCanArrowUp className="w-6 h-6 text-blue-600" />
+                <FaTrashCanArrowUp className="w-6 h-6 text-blue-600 cursor-pointer" />
               </div>
             </div>
           </li>
