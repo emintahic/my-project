@@ -56,7 +56,7 @@ const TodoList: React.FC = () => {
 
   return (
     <div className="w-72 mx-auto ">
-      <div className="bg-white rounded-md px-1 mt-5 py-2 drop-shadow-sm">
+      <div className="bg-white rounded-3xl px-1 mt-5 py-2 drop-shadow-sm">
         <input
           type="text"
           required
@@ -64,7 +64,7 @@ const TodoList: React.FC = () => {
           onChange={(e) => {
             setNewValue(e.target.value);
           }}
-          className="bg-gray-50 h-7 rounded-md  outline-none border-none"
+          className=" h-7 rounded-md  outline-none border-none"
           placeholder="Add a new TODO"
         />
         <button
@@ -80,7 +80,7 @@ const TodoList: React.FC = () => {
         {todos.map((todo) => (
           <li
             key={todo.id}
-            className="flex flex-row justify-between gap-3 bg-white rounded-md  mt-5 py-2 px-2 drop-shadow-sm "
+            className="flex flex-row justify-between gap-3 bg-white rounded-3xl  mt-5 py-3 px-6 drop-shadow-sm "
           >
             {todo.editing ? (
               <div>
