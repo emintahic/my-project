@@ -70,7 +70,7 @@ const TodoList: React.FC = () => {
         <button
           type="submit"
           onClick={handleAddTodo}
-          className="bg-blue-600 rounded-md h-7 px-3 text-sm text-white"
+          className="bg-blue-600 rounded-3xl h-7 px-3 text-sm text-white"
         >
           ADD
         </button>
