@@ -27,9 +27,10 @@ const TodoList: React.FC = () => {
       title: newValue,
       completed: false,
     };
-
-    dispatch(addTodo(newTodo));
-    setNewValue("");
+    if (newValue !== "") {
+      dispatch(addTodo(newTodo));
+      setNewValue("");
+    }
   };
 
   const handleDeleteTodo = (id: number) => {
